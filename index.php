@@ -11,25 +11,17 @@
 	include("static/lang/".$_SESSION['lang']."/lang-".$_SESSION['lang'].".php");
 
 	if(!isset($_GET['page']))
-		$action = NULL;
+		$page = "home";
 	else
 		if(!preg_match("/^[a-z]+$/", $_GET['page']))
 		{
-			$action = "404";
+			$page = "404";
 		}
 		else
-			$action = $_GET['page'];
+			$page = $_GET['page'];
 
-	switch($action)
+	switch($page)
 	{
-		case NULL :
-			require("controllers/home.php");
-			break;
-
-		case "" :
-			require("controllers/home.php");
-			break;
-
 		case "home" :
 			require("controllers/home.php");
 			break;
@@ -60,6 +52,11 @@
 
 		default :
 			require("controllers/home.php");
+	}
+
+	if(isset($_GET['action']))
+	{
+		require("controllers/changeLanguage.php");
 	}
 	 
 

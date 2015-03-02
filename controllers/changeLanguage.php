@@ -1,5 +1,4 @@
 <?php
-	echo $_GET['page']." ".$_GET['action'];
 
 	$lang = $_GET['action'];
 	$page = $_GET['page'];

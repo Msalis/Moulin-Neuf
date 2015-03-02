@@ -1,5 +1,4 @@
 <div class="header">
-	<h1>This is a header</h1>
 	<ul>
 		<li><a href="index.php?page=history"><?php echo $content['historyLink']; ?></a></li>
 		<li><a href="index.php?page=surroundings"><?php echo $content['surroundingsLink']; ?></a></li>

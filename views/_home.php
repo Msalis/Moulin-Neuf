@@ -10,19 +10,19 @@
 
 		</div>
 		<div class="right-side">
-			<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
+			<form id="bookingForm" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
 				<fieldset>
-					<input type="text" id="" name="name" placeholder="<?php echo $content['formName'];  ?>">
-					<input type="text" id="" name="name" placeholder="<?php echo $content['formFirstName'];  ?>">
-					<input type="text" id="" name="name" placeholder="<?php echo $content['formMail'];  ?>">
-					<input type="text" id="" name="name" placeholder="<?php echo $content['formNbPeople']; ?>">
+					<input type="text" id="name" name="name" placeholder="<?php echo $content['formName'];  ?>">
+					<input type="text" id="firstName" name="firstName" placeholder="<?php echo $content['formFirstName'];  ?>">
+					<input type="text" id="mail" name="mail" placeholder="<?php echo $content['formMail'];  ?>">
+					<input type="text" id="nbPersons" name="nbPersons" placeholder="<?php echo $content['formNbPeople']; ?>">
 				</fieldset>
 				<fieldset>
 					<input type="text" id="datepickerBegin" placeholder="<?php echo $content['formBeginDate']; ?>">
 					<input type="text" id="datepickerEnd" placeholder="<?php echo $content['formEndDate']; ?>">
 				</fieldset>
 				<fieldset>
-					<textarea id="" placeholder="<?php echo $content['formTextarea']; ?>"></textarea>
+					<textarea id="specialReq" placeholder="<?php echo $content['formTextarea']; ?>"></textarea>
 				</fieldset>
 				<fieldset>
 					<input type="submit" value="<?php echo $content['formSubmit']; ?>">

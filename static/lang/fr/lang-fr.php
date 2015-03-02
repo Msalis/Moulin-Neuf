@@ -7,7 +7,7 @@
 
 /* ---------- LINKS ---------- */
 
-	$content['homeLink'] = "";
+	$content['homeLink'] = "Accueil";
 	$content['historyLink'] = "Histoire";
 	$content['surroundingsLink'] = "Cadre de vie";
 	$content['ecotourismLink'] = "Écotourisme";

@@ -8,6 +8,7 @@
 
 	/*$url = substr($_SERVER['REQUEST_URI'],1);
 	echo $url;*/
+	include("static/lang/".$_SESSION['lang']."/lang-".$_SESSION['lang'].".php");
 
 	if(!isset($_GET['page']))
 		$action = NULL;
@@ -56,7 +57,6 @@
 		case "contact" :
 			require("controllers/contact.php");
 			break;
-
 
 		default :
 			require("controllers/home.php");

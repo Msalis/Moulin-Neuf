@@ -1,5 +1,13 @@
 <div class="footer">
-	<h2>This a footer</h2>
+	<div>
+		<span></span>
+		<a href="">Mentions légales</a>
+		<a href="">INÉDITS L'Élan Créatif</a>
+	</div>
+	<div>
+		<a href="index.php?action=fr">FR</a>
+		<a href="index.php?action=en">EN</a>
+	</div>
 </div>
 
 </body>

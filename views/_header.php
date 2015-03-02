@@ -1,11 +1,11 @@
 <div class="header">
 	<h1>This is a header</h1>
 	<ul>
-		<li><a href="index.php?page=history">Histoire</a></li>
-		<li><a href="index.php?page=surroundings">Cadre de vie</a></li>
-		<li><a href="index.php?page=ecotourism">Écotourisme</a></li>
-		<li><a href="index.php?page=activities">Activités</a></li>
-		<li><a href="index.php?page=booking">Réservation</a></li>
-		<li><a href="index.php?page=contact">Nous contacter</a></li>
+		<li><a href="index.php?page=history"><?php echo $content['historyLink']; ?></a></li>
+		<li><a href="index.php?page=surroundings"><?php echo $content['surroundingsLink']; ?></a></li>
+		<li><a href="index.php?page=ecotourism"><?php echo $content['ecotourismLink']; ?></a></li>
+		<li><a href="index.php?page=activities"><?php echo $content['activitiesLink']; ?></a></li>
+		<li><a href="index.php?page=booking"><?php echo $content['bookingLink']; ?></a></li>
+		<li><a href="index.php?page=contact"><?php echo $content['contactLink']; ?></a></li>
 	</ul>
 </div>

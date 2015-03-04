@@ -1,17 +1,17 @@
 <?php
 
-	$host = "";
-	$database = "";
-	$user = "";
+	$host = "localhost";
+	$database = "moulin-neuf";
+	$user = "root";
 	$password ="";
 
 
-	function DBConnect($host,$database,$user,$password)
+	function DBConnect()
 	{
 		$bdd = NULL;
 		try
 		{
-			$bdd = new PDO('mysql:host=localhost;dbname=inedits8_smartnetwork2015','inedits8_admin', 'kariboudu38');
+			$bdd = new PDO('mysql:host=localhost;dbname=moulin-neuf','root', '');
 		}
 		catch (Exception $e)
 		{
@@ -23,8 +23,14 @@
 
 	function getReservation($DB)
 	{
-		$query = $DB->query("SELECT * FROM reservation ORDER BY id DESC");
-		$res = $query->fetch();
-		return $res;
+		$query = $DB->query("SELECT * FROM reservations ORDER BY id DESC");
+		//$res = $query->fetch();
+		return $query;
+	}
+
+	function insertBlockedDate($DB, $label, $date)
+	{
+		$query = $DB->prepare("INSERT INTO blocked_dates(label, day) VALUES ('$label','$date')");
+		
 	}
 ?>

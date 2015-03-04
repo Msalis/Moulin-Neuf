@@ -1,12 +1,14 @@
 <?php
 	session_start();
 
+	require("models/SQLFunctions.php");
+	
 	if(!isset($_GET["request"]) || $_GET["request"] == NULL)
-			$request = NULL;
-		else
-			$request = $_GET['request'];
+		$request = NULL;
+	else
+		$request = $_GET['request'];
 
-	if(!isset($_SESSION) || empty($_SESSION))
+	if(!isset($_SESSION['adminLogin']) || !isset($_SESSION['adminPwd']))
 	{
 		switch($request)
 		{
@@ -15,6 +17,24 @@
 				break;
 			case "authentification" :
 				require("controllers/authentification.php");
+				break;
+			default :
+				require("controllers/login.php");
+		}
+	}
+	else
+	{
+		switch($request)
+		{
+			case NULL :
+				require("controllers/panel.php");
+				break;
+			case "blockDates" :
+				require("controllers/blockDates.php");
+				break;
+			default :
+				require("controllers/panel.php");
+				break;
 		}
 	}
 	

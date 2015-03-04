@@ -1,0 +1,66 @@
+//_teaser.scss
+
+.teaser {   
+    height: 70vh;
+    background: url('images/bg3.jpg') no-repeat center center;
+    background-size:cover;
+    background-attachment: fixed;
+    
+    .form-teaser {
+        background:rgba(0,0,0,0.5);
+        text-align: center;
+        height:100%;
+        color:white;
+        padding-top: 5vh;
+        
+        form {
+               display: inline-block;
+    max-width: 80%;
+    text-align: left;
+        }
+        
+     input[type=text], 
+input[type=password], 
+input[type=email], 
+input[type=search], 
+input[type=tel], input[type=submit],
+textarea {
+background:none;
+    border:1px solid white;
+    color:white;
+   width: 100%;
+    transition:all 300ms ease-in-out;
+        }
+        
+        textarea:focus {
+         width:200%;   
+        }
+        
+        ::-webkit-input-placeholder { /* WebKit browsers */
+    color:  white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    white;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    white;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    white;
+}
+
+        input[type=submit] {
+         background:$default-button-color;
+         color:white;
+            border-radius: 5px;
+            padding:5px 10px;
+            font-size: 0.8em;
+            margin: 10px 0;
+    
+        }
+    }
+}
+
+

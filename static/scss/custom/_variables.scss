@@ -1,0 +1,13 @@
+//_variables
+
+
+$coul1:#566981;
+$coul2:#b0955f;
+$coul3:#b0061e;
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+          transform: $transform;
+}

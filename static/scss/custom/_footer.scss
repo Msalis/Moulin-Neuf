@@ -1,0 +1,28 @@
+//_footer.scss
+
+.footer {
+    padding: 10px 0;
+    text-align: center;
+    background: $coul2;
+    font-size: 0.8em;
+    color:white;
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    ul {
+     list-style: none;
+        
+        li {
+            margin: 0 5%;
+            display: inline-block;
+            
+            img {
+             margin-right: 10px;   
+            }
+        }
+    }
+    
+}

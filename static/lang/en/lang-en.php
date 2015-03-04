@@ -16,13 +16,13 @@
 	$content['contactLink'] = "Contact us";
 
 /* ---------- FORM PLACEHOLDERS ---------- */ 
-
-	$content['formName'] = "NAME";
-	$content['formFirstName'] = "FIRST NAME";
-	$content['formMail'] = "MAIL";
-	$content['formNbPeople'] = "NUMBER OF PERSONS";
-	$content['formBeginDate'] = "BEGIN OF YOUR STAY";
-	$content['formEndDate'] = "END OF YOUR STAY";
-	$content['formTextarea'] = "SPECIAL REQUIREMENTS";
-	$content['formSubmit'] = "SEND";
+    $content['introform'] = "Check availability and book online";
+	$content['formName'] = "Name";
+	$content['formFirstName'] = "First name";
+	$content['formMail'] = "Mail";
+	$content['formNbPeople'] = "Number of personns";
+	$content['formBeginDate'] = "Date of arrival";
+	$content['formEndDate'] = "Date of departure";
+	$content['formTextarea'] = "Special requirements";
+	$content['formSubmit'] = "I book !";
 ?>

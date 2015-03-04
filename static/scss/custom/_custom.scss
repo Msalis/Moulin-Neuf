@@ -1,0 +1,57 @@
+//_custom.scss
+@import "_variables";
+@import "_teaser";
+@import "_menu";
+@import "_datepicker";
+@import "_footer";
+
+body {
+ font-family: 'Roboto';   
+}
+
+.main-container {
+    padding: 0;
+}
+
+.content {
+  padding: 40px;
+    
+    .left-side.home {
+            padding:0 5% 0 0;   
+    }
+    
+    .right-side {
+     
+        p {
+            margin: 0;
+        }
+            article img {
+                float: left;
+                margin: 0 10px 0 0;
+                
+}   
+    }
+}
+
+h1 {
+ color:$coul3;
+    font-size:2em;
+    font-family: "times new roman";
+}
+
+.hightlight {
+ color:$coul2;
+ font-style: italic;
+}
+
+.button {
+  background-color: #b0955f;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 0.5em 1.5em;
+  position: relative;
+  text-decoration: none;
+    transition: all 300ms ease-in-out;
+    margin: 10px 0 20px 0;
+}

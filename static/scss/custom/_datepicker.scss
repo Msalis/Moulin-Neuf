@@ -1,0 +1,96 @@
+//_datepicker
+
+.ui-datepicker {
+  width: 200px;
+    background:none;
+    font-size:0.8em;
+     left: calc(100% / 12 * 2 - 20px) !important;
+
+.ui-datepicker-header {
+  background:$coul3;
+  color: white;
+    border-radius: 5px 5px 0 0;  
+    
+    .ui-datepicker-title {
+  text-align: center;
+        height: 50px;
+        padding: 15px 0 0 0;
+}
+      .ui-icon {
+  display: block;
+  overflow: hidden;
+  text-indent: -90px;
+  width: 20px;
+  position: absolute;
+} 
+    
+   .ui-datepicker-prev {
+       left:20px;
+        height: 20px;
+    position: absolute;
+    top: 16px;
+    width: 20px;
+    
+    .ui-icon::after {
+  content: url("images/arrow_prev.svg");
+  display: inline-block;
+  text-indent: 67px;
+        width: 20px;
+        height: 20px;
+}
+   }
+    
+       .ui-datepicker-next {
+             right: 20px;
+    height: 20px;
+    position: absolute;
+    top: 16px;
+    width: 20px;
+    
+    .ui-icon::after {
+  content: url("images/arrow.svg");
+  display: inline-block;
+  text-indent: 60px;
+            width: 20px;
+        height: 20px;
+
+
+}
+   }
+}
+    
+    .ui-datepicker-calendar {
+         border-radius: 0 0 5px 5px;
+         margin:0;
+        background: white;
+        border:none;
+        font-size: 0.8em;
+        
+        td {
+              border-left: medium none;
+            border-top: medium none;
+            padding:2px 4px;
+            text-align: center;
+            vertical-align: top;
+            border-radius:50%;
+            transition: background 300ms ease-in-out;
+          &:hover {
+             background: $coul2;
+              a {color:white;
+              }
+          }
+            
+            a {
+                text-decoration: none;
+            }
+        }
+        
+        th {
+         @extend td;
+            border-radius: 0;
+        }
+       
+    }
+ 
+}
+

@@ -33,9 +33,9 @@ $(document).ready(function(){
 
 			$.ajax({
 
-				url:"controllers/mail.php",
+				//url:"controllers/mail.php",
 
-				type:"POST",
+				//type:"POST",
 
 				data:a,
 

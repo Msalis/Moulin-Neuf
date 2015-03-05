@@ -47,7 +47,8 @@
     text-align: left;
         }
         
-     input[type=text], 
+        
+         input[type=text], 
 input[type=password], 
 input[type=email], 
 input[type=search], 
@@ -59,11 +60,7 @@ background:none;
    width: 100%;
     transition:all 300ms ease-in-out;
         }
-        
-        textarea:focus {
-         width:200%;   
-        }
-        
+    
         ::-webkit-input-placeholder { /* WebKit browsers */
     color:  white;
 }
@@ -79,7 +76,17 @@ background:none;
    color:    white;
 }
 
-        input[type=submit] {
+    
+    }
+}
+
+
+        
+        textarea:focus {
+         width:200%;   
+        }
+        
+    input[type=submit] {
          background:$default-button-color;
          color:white;
             border-radius: 5px;
@@ -88,17 +95,54 @@ background:none;
             margin: 10px 0;
     
         }
-    }
-}
-
 
 // INNER PAGES ***********************************
-.teaser.history {
-       height: 21.5vw;
-    position:relative;
-    overflow: hidden;
-    min-height:0;
-    background:#000000;
-     background: url('images/bg_history.jpg') no-repeat scroll center bottom / cover;
 
+ input[type=text], 
+input[type=password], 
+input[type=email], 
+input[type=search], 
+input[type=tel], input[type=submit],
+textarea {
+background:none;
+    border:1px solid $coul2;
+    color:$coul1;
+   width: 50%;
+    min-width: 200px;
+    transition:all 300ms ease-in-out;
+        }
+
+.teaser {
+
+    &.history {
+        height: 15vw;
+        position:relative;
+        overflow: hidden;
+        min-height:0;
+        background:#000000;
+        background: url('images/bg_history.jpg') no-repeat fixed center center / cover;
+       
+
+}
+  
+     &.surroundings {
+        @extend .history;
+         background: url('images/bg_surroundings.jpg') no-repeat fixed center top / 100%;
+    }
+      &.ecotourism {
+        @extend .history;
+ background: url('images/bg_ecotourism.jpg') no-repeat fixed center top / 100%;
+    }
+      &.activities {
+        @extend .history;
+ background: url('images/bg_activities.jpg') no-repeat fixed center top / 100%;
+    }
+      &.booking {
+        @extend .history;
+ background: url('images/bg_booking.jpg') no-repeat fixed center top / 100%;
+    }
+      &.contact {
+        @extend .history;
+ background: url('images/bg_history.jpg') no-repeat fixed center top / 100%;
+    }
 }

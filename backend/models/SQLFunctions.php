@@ -8,7 +8,6 @@
 
 	function DBConnect()
 	{
-		$bdd = NULL;
 		try
 		{
 			$bdd = new PDO('mysql:host=localhost;dbname=moulin-neuf','root', '');

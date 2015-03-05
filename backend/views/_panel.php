@@ -1,8 +1,9 @@
 <?php require("_header.php") ?>
-<?php //require("_listing.php"); ?>
+
 <?php require("_blockDatesForm.php"); ?>
+<?php require("_listing.php"); ?>
 
-
+<?php require("_blockedPeriods.php"); ?>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../static/js/jquery-ui-1.11.3.custom/jquery-ui.js"></script>

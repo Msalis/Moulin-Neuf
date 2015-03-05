@@ -9,6 +9,7 @@
 	/*$url = substr($_SERVER['REQUEST_URI'],1);
 	echo $url;*/
 	include("static/lang/".$_SESSION['lang']."/lang-".$_SESSION['lang'].".php");
+	include("models/SQLMethods.php");
 
 	if(!isset($_GET['page']))
 		$page = "home";

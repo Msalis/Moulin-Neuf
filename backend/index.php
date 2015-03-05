@@ -32,6 +32,9 @@
 			case "blockDates" :
 				require("controllers/blockDates.php");
 				break;
+			case "removePeriod" :
+				require("controllers/removePeriod.php");
+				break;
 			default :
 				require("controllers/panel.php");
 				break;

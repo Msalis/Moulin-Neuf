@@ -8,12 +8,12 @@
 	/*echo $error;
 	echo $login." ".$pwd;*/
 
-	if(is_null($login) /*|| is_null(str_replace(" ", "", $login)) */|| !preg_match("/^[a-zA-Z0-9]+$/", $login))
+	if(is_null($login) /*|| is_null(str_replace(" ", "", $login)) */|| !preg_match("/^[a-zA-Z0-9]+$/", $login) || $login != "toto")
 	{
 		$error = true;
 		$errorType = 1;
 	}
-	else if(is_null($pwd) /*|| is_null(str_replace(" ", "", $pwd)) */|| !preg_match("/^[-_a-zA-Z0-9]+$/", $pwd))
+	else if(is_null($pwd) /*|| is_null(str_replace(" ", "", $pwd)) */|| !preg_match("/^[-_a-zA-Z0-9]+$/", $pwd) || $pwd != "toto")
 	{
 		$error = true;
 		$errorType = 2;

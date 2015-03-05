@@ -27,9 +27,45 @@
 		return $query;
 	}
 
-	function insertBlockedDate($DB, $label, $date)
+	function getBlockedDates($DB)
 	{
-		$query = $DB->prepare("INSERT INTO blocked_dates(label, day) VALUES ('$label','$date')");
-		
+		$query = $DB->query("SELECT * FROM blocked_dates");
+		return $query;
 	}
+
+	function insertBlockedPeriod($DB, $label, $date)
+	{
+		$query = $DB->prepare("INSERT INTO blocked_dates(label, blockedDate) VALUES ('$label','$date')");
+		$query->execute();		
+	}
+
+	function deletePeriod($DB, $label)
+	{
+		$query = $DB->query("DELETE FROM blocked_dates WHERE label='$label'");
+		return $query;
+	}
+
+	function getLabels($DB)
+	{
+		$query = $DB->query("SELECT DISTINCT label FROM blocked_dates ORDER BY blockedDate ASC");
+		return $query;
+	}
+
+	function getFirst($DB, $label)
+	{
+		// Recuperation de la date de début
+		$query = $DB->query("SELECT * FROM blocked_dates WHERE label = '$label' ORDER BY blockedDate ASC LIMIT 1");
+		return $query;
+	}
+
+	function getLast($DB, $label)
+	{
+		// Recuperation de la date de début
+		$query = $DB->query("SELECT * FROM blocked_dates WHERE label = '$label' ORDER BY blockedDate DESC LIMIT 1");
+		return $query;
+	}
+
+
+
+
 ?>

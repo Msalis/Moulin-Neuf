@@ -2,7 +2,7 @@
 <?php require("_header.php"); ?>
 
 <div class="main-container">
-	<div class="teaser">
+	<div class="teaser history">
 
 	</div>
 	<div class="content">

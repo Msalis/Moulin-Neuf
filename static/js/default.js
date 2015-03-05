@@ -7,8 +7,7 @@
 
 $(document).ready(function(){
     
-    var nb_img=$('.slider').length();
-    alert(nb_img);
+    //var nb_img = $('.slider').length();
     
  $('.img3').css({"transform":"scale(2)","opacity":"0"});
 setTimeout(function() {

@@ -1,15 +1,31 @@
 //_teaser.scss
 
+// HOMEPAGE ***********************************
+
 .teaser {   
-    height: 70vh;
+    height: 43vw;
     position:relative;
     overflow: hidden;
+    min-height: 520px;
+    background:#000000;
  
     .slider {
-        img {
-            position:absolute;
-            width: 100%;
-            transition: all 10s ease-in-out;
+        .bg1 {
+    background: url('images/bg1.jpg') no-repeat center bottom;
+    background-size:cover;
+    height: 43vw;
+    min-height: 520px;
+        }
+            .bg2{
+            @extend .bg1;
+            background: url('images/bg2.jpg') no-repeat scroll center bottom / cover;
+    
+        }
+        
+           .bg3{
+               @extend .bg1;
+                background: url('images/bg3.jpg') no-repeat scroll center bottom / cover;
+ 
         }
     }
         
@@ -24,7 +40,7 @@
         top:0;
         left: 0;
         z-index: 40;
-        
+        min-width: 220px;
         form {
                display: inline-block;
     max-width: 80%;
@@ -76,3 +92,13 @@ background:none;
 }
 
 
+// INNER PAGES ***********************************
+.teaser.history {
+       height: 21.5vw;
+    position:relative;
+    overflow: hidden;
+    min-height:0;
+    background:#000000;
+     background: url('images/bg_history.jpg') no-repeat scroll center bottom / cover;
+
+}

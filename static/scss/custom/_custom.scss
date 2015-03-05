@@ -4,6 +4,8 @@
 @import "_menu";
 @import "_datepicker";
 @import "_footer";
+@import "_slick";
+
 
 body {
  font-family: 'Roboto';   
@@ -12,7 +14,6 @@ body {
 .main-container {
     padding: 0;
 }
-
 .content {
   padding: 40px;
     

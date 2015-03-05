@@ -225,21 +225,30 @@ $opacity-not-active: .25;
 }
 .slick-dots {
     position: absolute;
-    bottom: -45px;
+    bottom: 0;
     list-style: none;
     display: block;
     text-align: center;
     padding: 0;
     width: 100%;
 
+    
+
     li {
-        position: relative;
-        display: inline-block;
-        height: 20px;
-        width: 20px;
-        margin: 0 5px;
-        padding: 0;
-        cursor: pointer;
+    background: white none repeat scroll 0 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 5px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 10px;
+        
+        &.slick-active {
+         background:$coul3;   
+        }
 
         button {
             border: 0;

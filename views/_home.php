@@ -4,11 +4,10 @@
 <div class="main-container col col-12">
 	<div class="teaser">
         <div class="slider">
-             <img class="img1" src="static/images/bg3.jpg" /> 
-             <img class="img2" src="static/images/bg2.jpg" /> 
-            <img class="img3" src="static/images/bg1.jpg" /> 
-            
-           
+            <div class="bg1"> </div> 
+            <div class="bg3"> </div> 
+             <div class="bg2"> </div>
+
         </div>
 <div class="form-teaser col col-2">
 

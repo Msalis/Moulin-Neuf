@@ -2,9 +2,17 @@
 
 .teaser {   
     height: 70vh;
-    background: url('images/bg3.jpg') no-repeat center center;
-    background-size:cover;
-    background-attachment: fixed;
+    position:relative;
+    overflow: hidden;
+ 
+    .slider {
+        img {
+            position:absolute;
+            width: 100%;
+            transition: all 10s ease-in-out;
+        }
+    }
+        
     
     .form-teaser {
         background:rgba(0,0,0,0.5);
@@ -12,6 +20,10 @@
         height:100%;
         color:white;
         padding-top: 5vh;
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 40;
         
         form {
                display: inline-block;

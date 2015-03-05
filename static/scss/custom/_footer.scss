@@ -6,10 +6,16 @@
     background: $coul2;
     font-size: 0.8em;
     color:white;
+    position: relative;
     
     a {
         color: white;
         text-decoration: none;
+        
+        img {
+         max-width:20px;   
+            
+        }
     }
     
     ul {
@@ -24,5 +30,11 @@
             }
         }
     }
+    
+    .lang {
+  position: absolute;
+  right: 5%;
+  top: 25px;
+}
     
 }

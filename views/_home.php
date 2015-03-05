@@ -3,6 +3,13 @@
 
 <div class="main-container col col-12">
 	<div class="teaser">
+        <div class="slider">
+             <img class="img1" src="static/images/bg3.jpg" /> 
+             <img class="img2" src="static/images/bg2.jpg" /> 
+            <img class="img3" src="static/images/bg1.jpg" /> 
+            
+           
+        </div>
 <div class="form-teaser col col-2">
 
     			<form id="bookingForm" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">

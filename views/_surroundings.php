@@ -11,9 +11,12 @@
             <?php echo $content['home_surroundings_txt'];  ?>
 		</div>
 		<div class="right-side col col-4">
-<?php echo $content['home_surroundings_txt_right'];  ?>
+<img src="static/images/img_surroundings.jpg" alt="Activités / Surroundings" tilte="Activités / Surroundings" />
 		</div>
+        <div class="col col-12">
+        <?php echo $content['home_surroundings_txt2'];  ?>
 	</div>
+        </div>
 	</div>
 
 </div>

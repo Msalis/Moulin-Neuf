@@ -75,25 +75,15 @@ background:none;
 :-ms-input-placeholder { /* Internet Explorer 10+ */
    color:    white;
 }
-
+  textarea:focus {
+         width:200%;   
+        }
     
     }
 }
 
+        
 
-        
-        textarea:focus {
-         width:200%;   
-        }
-        
-    input[type=submit] {
-         background:$default-button-color;
-         color:white;
-            border-radius: 5px;
-            padding:5px 10px;
-            font-size: 0.8em;
-            margin: 10px 0;
-            }
 
 
 // INNER PAGES ***********************************
@@ -107,11 +97,27 @@ textarea {
 background:none;
     border:1px solid $coul2;
     color:$coul1;
-   width: 50%;
+   width: 80%;
     min-width: 200px;
     transition:all 300ms ease-in-out;
         }
 
+    input[type=submit] {
+         background:$default-button-color !important;
+         color:white;
+            border-radius: 5px;
+            padding:5px 10px;
+            font-size: 0.8em;
+            margin: 10px 0;
+            }
+textarea {
+ height:100px;   
+}
+  textarea:focus {
+         height:20vh;   
+        }
+
+      
 .teaser {
 
     &.history {
@@ -121,8 +127,6 @@ background:none;
         min-height:0;
         background:#000000;
         background: url('images/bg_history.jpg') no-repeat fixed center center / cover;
-       
-
 }
   
      &.surroundings {
@@ -146,3 +150,4 @@ background:none;
  background: url('images/bg_history.jpg') no-repeat fixed center top / 100%;
     }
 }
+

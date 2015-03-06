@@ -67,3 +67,31 @@ h2 {
 ol li {
 list-style-type: upper-roman;
 }
+
+em {
+    display: block;
+}
+
+// PAGES
+      .content img {
+    width: 100%;
+    margin: 20px 0;
+            border-radius: 20px;
+          
+          &.small {
+           width:75%;   
+          }
+        }
+// RESERVATION
+
+.booking {
+    .right-side {
+        padding:0 3% 0 0;
+        
+  
+}
+   .form_instructions {
+       width:80%;
+       font-size: 0.8em;
+   }
+}

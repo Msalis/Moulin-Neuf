@@ -17,4 +17,8 @@
   <script src="static/js/modernizr.js"></script>
 
 </head>
-<body>
+<body class="<?php 
+if (!isset ($_GET['page']))
+    echo 'home';
+else 
+    echo $_GET['page']; ?>">

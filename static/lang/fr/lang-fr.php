@@ -79,9 +79,9 @@ une ambiance saine et agréable à l’intérieur de la demeure. Des pierres de 
 ont été remplacées avec le savoir-faire d’un compagnon tailleur de pierre. Toutes
 les fenêtres ont été changées au profit de fenêtres en chêne à double vitrage. Enfin,(
 faisant honneur au nom du Périgord blanc,) la terrasse a été pavée en opus avec des
-pierres de carrière de belle qualité.</p>
+pierres de carrière de belle qualité.</p>";
 
-<h2>Descriptif complet</h2>
+   $content['home_surroundings_txt2'] = "<h2>Descriptif complet</h2>
 La propriété de Moulin-Neuf-sur-Dronne vous offre tout le confort d’une luxueuse habitation.
 <br><br><strong>Au rez-de-chaussée,</strong><br>
 <ul><li> Une cuisine entièrement équipée (frigidaire, congélateur, lave-vaisselle, four, micro-onde, plaques à induction,…)
@@ -163,11 +163,38 @@ compostage de surface.</li></ol>";
 // BOOKING ***********************
 
     $content['home_booking_tilte'] = "Réservation";
+    $content['home_booking_right_tilte'] = "<strong>Au 1er étage de la demeure, 5 chambres et 2 salles de bains permettent le couchage pour 10 à 14 personnes.</strong><br><br>";
+    $content['home_booking_right_txt'] = "
+<h2>La chambre Kaki</h2>
+<em>Une suite parentale de plus de 30 m2, avec sa salle de bain privative, son petit coin salon et sa TV.</em>
+1 lit double.
+<img src='static/images/bed1.jpg' alt='Chambre' tilte='chambre' />
+<h2>La chambre Cactus</h2>
+<em>Une charmante chambre ...avec vue sur...</em>
+1 lit double.
+<img src='static/images/bed2.jpg' alt='Chambre' tilte='chambre' />
+<h2>La chambre Lilas</h2>
+<em>Une petite chambre ...les premiers rayons du soleil...</em>
+2 lits simples pouvant se transformer en un lit double.
+<img src='static/images/bed3.jpg' alt='Chambre' tilte='chambre' />
+";
 
-// BOOKING ***********************
+ $content['home_booking_right_txt2'] = "<h2>La chambre Bordeaux</h2>
+<em>Une vaste chambre de 30 m2, orientée au couchant.</em>
+2 lits simples pouvant se transformer en un lit double.
+<img src='static/images/bed2.jpg' alt='Chambre' tilte='chambre' />
+<h2>La chambre Turquoise</h2>
+<em>Une vaste chambre de 30 m2 aux couleurs apaisantes, orientée au couchant, avec sa grande salle de bain et son
+coin boudoir.</em>
+2 lits simples pouvant se transformer en un lit double.<br>
+<img src='static/images/bed1.jpg' alt='Chambre' tilte='chambre' />
+4 lits d’appoints de qualité sont également disponibles sur demande.";
+
+// CONTACT ***********************
 
     $content['home_contact_tilte'] = "Nous contacter";
     $content['home_contact_txt'] = "Merci de prendre quelques instants pour compléter le formulaire";
+
 
 /* ---------- LINKS ---------- */
 
@@ -190,5 +217,7 @@ compostage de surface.</li></ol>";
 	$content['formEndDate'] = "Date de départ";
 	$content['formTextarea'] = "Demande(s) particulière(s)";
 	$content['formSubmit'] = "Je réserve";
+    $content['formSubmit-contact'] = "Envoyer";
+    $content['form_instructions'] = "Ces informations nous permettent de vérifier la disponibilité du gîte. Une fois votre réservation confirmée, un lien vers de paiement sécurisé (paypal) vous sera envoyé par e-mail.<br><br>La réception des locaux s'effectue à partir de 15h et le départ jusqu'à 12h.";
 
 ?>

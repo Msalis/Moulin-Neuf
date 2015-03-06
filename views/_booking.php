@@ -5,8 +5,8 @@
 	<div class="teaser booking">
 
 	</div>
-	<div class="content">
-		<div class="left-side col col-8 home">
+	<div class="content booking">
+		<div class="left-side col col-4 home">
 <h1><?php echo $content['home_booking_tilte'];  ?></h1>
            			<form id="bookingForm" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
                         <?php echo $content['introform'];  ?>
@@ -27,9 +27,14 @@
 					<input type="submit" value="<?php echo $content['formSubmit']; ?>">
 				</fieldset>
 			</form>
+            <div class="form_instructions"><?php echo $content['form_instructions'];  ?></div>
 		</div>
+        <div class="col col-8"><?php echo $content['home_booking_right_tilte'];  ?></div>
 		<div class="right-side col col-4">
-
+<?php echo $content['home_booking_right_txt'];  ?>
+		</div>
+        	<div class="right-side col col-4">
+<?php echo $content['home_booking_right_txt2'];  ?>
 		</div>
 	</div>
 	</div>

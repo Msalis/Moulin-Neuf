@@ -99,3 +99,10 @@
  
 }
 
+.booking .ui-datepicker {
+  width: 200px;
+    background:none;
+    font-size:0.8em;
+     left: calc(80% / 12 * 4 - 20px) !important;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}

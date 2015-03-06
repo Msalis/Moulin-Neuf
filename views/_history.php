@@ -11,7 +11,7 @@
             <?php echo $content['home_history_txt'];  ?>
 		</div>
 		<div class="right-side col col-4">
-
+<img src="static/images/707_001.jpg" alt="History of Moulin Neuf sur Dronne" tilte="History of Moulin Neuf sur Dronne" />
 		</div>
 	</div>
 	</div>

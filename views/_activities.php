@@ -11,7 +11,7 @@
             <?php echo $content['home_activities_txt'];  ?>
 		</div>
 		<div class="right-side col col-4">
-
+<img src="static/images/img_activities.jpg" alt="our activities" tilte="our activities" />
 		</div>
 	</div>
 	</div>

@@ -83,6 +83,11 @@
             a {
                 text-decoration: none;
             }
+            
+            &.ui-datepicker-unselectable span {
+                text-decoration: line-through;
+                opacity:0.5;
+            }
         }
         
         th {

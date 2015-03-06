@@ -1,10 +1,34 @@
 //_teaser.scss
 
+// HOMEPAGE ***********************************
+
 .teaser {   
-    height: 70vh;
-    background: url('images/bg3.jpg') no-repeat center center;
+    height: 43vw;
+    position:relative;
+    overflow: hidden;
+    min-height: 520px;
+    background:#000000;
+ 
+    .slider {
+        .bg1 {
+    background: url('images/bg1.jpg') no-repeat center bottom;
     background-size:cover;
-    background-attachment: fixed;
+    height: 43vw;
+    min-height: 520px;
+        }
+            .bg2{
+            @extend .bg1;
+            background: url('images/bg2.jpg') no-repeat scroll center bottom / cover;
+    
+        }
+        
+           .bg3{
+               @extend .bg1;
+                background: url('images/bg3.jpg') no-repeat scroll center bottom / cover;
+ 
+        }
+    }
+        
     
     .form-teaser {
         background:rgba(0,0,0,0.5);
@@ -12,14 +36,19 @@
         height:100%;
         color:white;
         padding-top: 5vh;
-        
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 40;
+        min-width: 220px;
         form {
                display: inline-block;
     max-width: 80%;
     text-align: left;
         }
         
-     input[type=text], 
+        
+         input[type=text], 
 input[type=password], 
 input[type=email], 
 input[type=search], 
@@ -31,11 +60,7 @@ background:none;
    width: 100%;
     transition:all 300ms ease-in-out;
         }
-        
-        textarea:focus {
-         width:200%;   
-        }
-        
+    
         ::-webkit-input-placeholder { /* WebKit browsers */
     color:  white;
 }
@@ -51,7 +76,17 @@ background:none;
    color:    white;
 }
 
-        input[type=submit] {
+    
+    }
+}
+
+
+        
+        textarea:focus {
+         width:200%;   
+        }
+        
+    input[type=submit] {
          background:$default-button-color;
          color:white;
             border-radius: 5px;
@@ -60,7 +95,54 @@ background:none;
             margin: 10px 0;
     
         }
+
+// INNER PAGES ***********************************
+
+ input[type=text], 
+input[type=password], 
+input[type=email], 
+input[type=search], 
+input[type=tel], input[type=submit],
+textarea {
+background:none;
+    border:1px solid $coul2;
+    color:$coul1;
+   width: 50%;
+    min-width: 200px;
+    transition:all 300ms ease-in-out;
+        }
+
+.teaser {
+
+    &.history {
+        height: 15vw;
+        position:relative;
+        overflow: hidden;
+        min-height:0;
+        background:#000000;
+        background: url('images/bg_history.jpg') no-repeat fixed center center / cover;
+       
+
+}
+  
+     &.surroundings {
+        @extend .history;
+         background: url('images/bg_surroundings.jpg') no-repeat fixed center top / 100%;
+    }
+      &.ecotourism {
+        @extend .history;
+ background: url('images/bg_ecotourism.jpg') no-repeat fixed center top / 100%;
+    }
+      &.activities {
+        @extend .history;
+ background: url('images/bg_activities.jpg') no-repeat fixed center top / 100%;
+    }
+      &.booking {
+        @extend .history;
+ background: url('images/bg_booking.jpg') no-repeat fixed center top / 100%;
+    }
+      &.contact {
+        @extend .history;
+ background: url('images/bg_history.jpg') no-repeat fixed center top / 100%;
     }
 }
-
-

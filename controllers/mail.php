@@ -21,7 +21,7 @@ session_start();
 		4 => $content['error4'],
 		5 => $content['error5'],
 		6 => $content['error6'],
-		7 => $content['error7'],
+		7 => $content['error7']
 	);
 
 	if(!preg_match("/^[a-zA-Z- Éàéèêëîïôöùûü]+$/", $name))

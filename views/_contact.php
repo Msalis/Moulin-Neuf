@@ -9,7 +9,7 @@
 		<div class="left-side col col-8 home">
 <h1><?php echo $content['home_contact_tilte'];  ?></h1>
             <?php echo $content['home_contact_txt'];  ?>
-            			<form id="contactgForm" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
+            		<form id="contactgForm" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
                        
 				<fieldset>
 					<input type="text" id="name" name="name" placeholder="<?php echo $content['formName'];  ?>">
@@ -23,7 +23,9 @@
 				<fieldset>
 					<input type="submit" value="<?php echo $content['formSubmit']; ?>">
 				</fieldset>
-			</form>  
+			</form> 
+			<div class="displayContactErrors">
+			</div> 
 		</div>
 		<div class="right-side col col-4">
 

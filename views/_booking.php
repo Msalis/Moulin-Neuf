@@ -27,6 +27,8 @@
 					<input type="submit" value="<?php echo $content['formSubmit']; ?>">
 				</fieldset>
 			</form>
+			<div class="displayErrors">
+			</div>
 		</div>
 		<div class="right-side col col-4">
 

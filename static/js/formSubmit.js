@@ -23,9 +23,7 @@ $(document).ready(function(){
 		a.append("requirements",r);
 
 		if(n===""||f===""||m===""||nb===""||b===""||e===""||r===""){
-
-			alert("Veuillez compléter tous les champs")
-
+			$(".displayErrors").html("Veuillez compléter tous les champs");
 		}
 		else
 
@@ -34,33 +32,20 @@ $(document).ready(function(){
 			$.ajax({
 
 				url:"controllers/mail.php",
-
 				type:"POST",
-
 				data:a,
-
 				processData:false,
-
 				contentType:false,
-
 				cache:false,
-
 				dataType:"json",
-
 				success:function(e){
-
-					if(e.reponse=="ok"){
-
-						alert("That's good !")
-
+					if(e.reponse =="ok"){
+						alert("GOOD");
 					}
-
 					else
-
 					{
-
-						alert(String(e.reponse));
-
+						//alert(e.reponse);
+						$(".displayErrors").html(e.reponse);
 					}
 
 				}
@@ -69,4 +54,58 @@ $(document).ready(function(){
 
 		}
 	});
+
+	$("#contactgForm").on("submit",function(e){
+		e.preventDefault();
+
+		var t=$(this);
+
+		var n=$("#name").val();
+		var f=$("#firstName").val();
+		var m=$("#mail").val();
+		var r=$("#specialReq").val();
+
+		var a=new FormData;
+
+		a.append("name",n);
+		a.append("firstName",f);
+		a.append("mail",m);
+		a.append("requirements",r);
+
+		if(n===""||f===""||m===""||r===""){
+			$(".displayContactErrors").html("Veuillez compléter tous les champs");
+		}
+		else
+
+		{
+
+			$.ajax({
+
+				url:"controllers/contactMail.php",
+				type:"POST",
+				data:a,
+				processData:false,
+				contentType:false,
+				cache:false,
+				dataType:"json",
+				success:function(e){
+					if(e.reponse =="ok"){
+						alert("GOOD");
+					}
+					else
+					{
+						//alert(e.reponse);
+						$(".displayContactErrors").html(e.reponse);
+					}
+
+				}
+
+			})
+
+		}
+	});
+
+
+
+
 });

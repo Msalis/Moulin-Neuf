@@ -14,6 +14,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="static/js/jquery-ui-1.11.3.custom/jquery-ui.js"></script>
 <script src="static/js/slick.min.js"></script>
+<script src="static/js/formSubmit.js"></script>
 <script src="static/js/default.js"></script>
 <script>
 	$(function() {

@@ -180,6 +180,7 @@ compostage de surface.</li></ol>";
 	$content['contactLink'] = "Nous contacter";
 
 /* ---------- FORM PLACEHOLDERS ---------- */ 
+
     $content['introform'] = "Vérifier la disponibilité 
 & réserver en ligne";
 	$content['formName'] = "Nom";
@@ -190,5 +191,55 @@ compostage de surface.</li></ol>";
 	$content['formEndDate'] = "Date de départ";
 	$content['formTextarea'] = "Demande(s) particulière(s)";
 	$content['formSubmit'] = "Je réserve";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- MAIL ---------- */
+
+	$content['intromail1'] = "Cher(e) ";
+	$content['intromail2'] = "Vous avez effectué récemment une demande de réservation via notre site, et en cela nous vous en remercions.";
+	$content['confirm'] = "Nous avons bien pris en compte votre demande et tâcherons de vous répondre dans les meilleurs délais.";
+	$content['recapDemand'] = "Récapitulatif de votre demande :";
+	$content['recapStayPeriod1'] = "Votre séjour : du ";
+	$content['recapStayPeriod2'] = " au ";
+	$content['recapNbPerson'] = "Nombre de personnes : ";
+	$content['recapRequirements'] = "Demande(s) particulière(s) : ";
+	$content['thanks'] = "Cordialement,";
+	$content['sender'] = "Le gîte du Moulin Neuf.";
+
+
+/* --------- FORM ERRORS --------- */
+
+$content['error1'] = "Le nom que vous avez renseigné comporte un (ou des) caractère(s) invalide(s)";
+$content['error1'] = "Le prénom que vous avez renseigné comporte un (ou des) caractère(s) invalide(s)";
+$content['error1'] = "Le mail que vous avez renseigné est invalide";
+$content['error1'] = "";
+$content['error1'] = "";
+$content['error1'] = "";
+$content['error1'] = "";
 
 ?>

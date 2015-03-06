@@ -164,6 +164,11 @@ compostage de surface.</li></ol>";
 
     $content['home_booking_tilte'] = "Réservation";
 
+// BOOKING ***********************
+
+    $content['home_contact_tilte'] = "Nous contacter";
+    $content['home_contact_txt'] = "Merci de prendre quelques instants pour compléter le formulaire";
+
 /* ---------- LINKS ---------- */
 
 	$content['homeLink'] = "Accueil";

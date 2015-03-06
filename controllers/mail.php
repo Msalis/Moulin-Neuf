@@ -15,13 +15,13 @@ session_start();
 	$nerr = 0;
 	
 	$error_array = array(
-		1 => "Le nom que vous avez renseigné comporte un (ou des) caractère(s) invalide(s)",
-		2 => "Le prénom que vous avez renseigné comporte un (ou des) caractère(s) invalide(s)",
-		3 => "Le mail que vous avez renseigné comporte un (ou des) caractère(s) invalide(s)",
-		4 => "Le nombre de personnes que vous avez renseigné est invalide.",
-		5 => "Veuillez renseigner une date de début de séjour.",
-		6 => "Veuillez renseigner une date de fin de séjour.",
-		7 => "Le message que vous avez composé comporte un (ou des) caractère(s) invalide(s)",
+		1 => $content['error1'],
+		2 => $content['error2'],
+		3 => $content['error3'],
+		4 => $content['error4'],
+		5 => $content['error5'],
+		6 => $content['error6'],
+		7 => $content['error7'],
 	);
 
 	if(!preg_match("/^[a-zA-Z- Éàéèêëîïôöùûü]+$/", $name))

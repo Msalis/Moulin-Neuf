@@ -235,11 +235,11 @@ compostage de surface.</li></ol>";
 /* --------- FORM ERRORS --------- */
 
 $content['error1'] = "Le nom que vous avez renseigné comporte un (ou des) caractère(s) invalide(s)";
-$content['error1'] = "Le prénom que vous avez renseigné comporte un (ou des) caractère(s) invalide(s)";
-$content['error1'] = "Le mail que vous avez renseigné est invalide";
-$content['error1'] = "";
-$content['error1'] = "";
-$content['error1'] = "";
-$content['error1'] = "";
+$content['error2'] = "Le prénom que vous avez renseigné comporte un (ou des) caractère(s) invalide(s)";
+$content['error3'] = "Le mail que vous avez renseigné est invalide";
+$content['error4'] = "Le nombre de personnes que vous avez renseigné est invalide.";
+$content['error5'] = "Veuillez renseigner une date de début de séjour.";
+$content['error6'] = "Veuillez renseigner une date de fin de séjour.";
+$content['error7'] = "Le message que vous avez composé comporte un (ou des) caractère(s) invalide(s).";
 
 ?>

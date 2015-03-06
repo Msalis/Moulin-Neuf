@@ -12,10 +12,10 @@ session_start();
 	$nerr = 0;
 	
 	$error_array = array(
-		1 => "Le nom que vous avez renseigné comporte un (ou des) caractère(s) invalide(s)",
-		2 => "Le prénom que vous avez renseigné comporte un (ou des) caractère(s) invalide(s)",
-		3 => "Le mail que vous avez renseigné comporte un (ou des) caractère(s) invalide(s)",
-		4 => "Le message que vous avez composé comporte un (ou des) caractère(s) invalide(s)"
+		1 => $content['error1'],
+		2 => $content['error2'],
+		3 => $content['error3'],
+		4 => $content['error7']
 	);
 
 	if(!preg_match("/^[a-zA-Z- Éàéèêëîïôöùûü]+$/", $name))
